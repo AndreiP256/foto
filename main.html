@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./animations.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehnica și Arta Fotografică</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active hidden delay" href="#home">Home</a>
+        <a class="hidden delay" href="obiective.html">Obiective Foto</a>
+        <a class="hidden delay" href="editare.html">Editare</a>
+        <a class="hidden delay" href="imagini.html">Imagini</a>
+    </div>
+    <div class="title-screen" id="home">
+        <header>
+            <h1 class="main-title hidden">FOTOGRAFIA</h1>
+            <p class="quote hidden">”Arta de a desena cu lumină o bucată din viață” <br>- A. Prusacov</p>
+            <div class="hidden">
+                <a type="button" href="#tehnica-foto" class="button">Tehnica Fotografică</a>
+                <a type="button" href="#arta-foto" class="button">Arta Fotografică</a>
+            </div>
+        </header>
+    </div>
+    <div class="content">
+        <section class="tehnica-foto" id="tehnica-foto">
+            <div class="tehnica-def">
+                <h1 class="heading hidden">TEHNICA FOTOGRAFICĂ</h1>
+                <p class="hidden">O fotografie ”Corectă” este rezultatul a 4 lucruri: Sensibilitate senzorului/filmului, Timpul de Expunere, Deschiderea Diafragmei și Sursele de lumină.</p> 
+                <div class="img-grid-sp">
+                    <a class="hidden delay" href="#shutter"><img src="shutter.png" class="symbol-img"></a>
+                    <a class="hidden delay" href="#aperture"><img src="aperture.png" class="symbol-img"></a>
+                    <a class="hidden delay" href="#iso"><img src="iso.png" class="symbol-img"></a>
+                    <a class="hidden delay" href="#light"><img src="lumina.png" class="symbol-img"></a>
+                    <a class="hidden delay" href=""><img src="image.png" class="symbol-img"></a>
+                </div> 
+                <p class="hidden">O combinație ”corectă” a acestor elemente va rezulta într-o fotografie ”corect expusă”, adică nici prea luminată, nici prea întunecată, dar nu neapărat una frumoasă. Fiecare dintre aspectele enumerate anterior au ca scop principal obținerea unei imagini mai luminate sau mai întunecate, însă fiecare vine însoțită de câte un efect advers.</p>
+                <!--TODO ADD IMAGE SOURCE-->
+                <img src="corectly-exposed.jpg" class="exposed image hidden">
+                
+                <p class="hidden">Acestea sunt lucrurile ce diferențiază o imagine ”corectă” de una frumoasă, unică și îndradevăr demnă de denumirea de <i>ARTĂ.</i></p>
+            </div>
+            <div class="shutter" id="shutter">
+                <h2 class="sec-heading hidden">Timp de Expunere</h2>
+                <p class="hidden">Timpul de expunere se referă la perioada în care senzorul (sau filmul) este expus la lumină. O expunere mai lungă va rezulta într-o fotografie mai luminată.<br>Folosirea unui timp lung de expunere rezultă ca orice mișcare care se petrece în cadru să nu fie ”înghețată”, ci să fie surprinsă ca o ”urmă” pe imagine.</p>
+                <img src="shutter-diagrama.png" class="shutter image hidden">
+                <p class="hidden">Un clasic exemplu ar acestui efect este fotografia de tip ”light painting”, însă există multe alte moduri unice de a beneficia de acest efect advers al timpului lung de expunere.</p>
+                <div class="img-grid">
+                    <img class="hidden delay" src="long-exp-1.jpg"><img src="long-exp-2.jpg" class="hidden delay"><img src="long-exp-3.jpg" class="hidden delay">
+                </div>
+                <p class="hidden">De menționat este că un timp foarte scurt de expunere ( 1/2000 secunde ) este folosit pentru poze sportive, sau în general situații în care mișcarea este una foarte rapidă deoarece pe o perioadă așa scurtă de timp până si elicea un elicopter ar părea statică.</p>
+                <div class="img-grid">
+                    <img src="sport-photo-1.jpg" class="hidden delay"><img src="sport-photo-2.jpg" class="hidden delay"><img src="sport-photo-3.jpg" class="hidden delay">
+                </div>
+            </div>
+            <div class="aperture" id="aperture">
+                <h2 class="sec-heading hidden">Deschiderea Diafragmei</h2>
+                <p class="hidden">În interiorul orcărui obiectiv foto există un set de lamele metalice care se pot închide sau deschide rezultând în pătrunderea a mai multă sau mai puțină lumină. Valoarea asociată deschiderii diafragmei este cunoscută mai uzual ca F-stop ( <i>f1.8, f16</i> ), o valoare mai mică însemnând o deschidere mai mare. <br>O consecință a unei diafragme mai deschise este o ”plajă focală” sau ”profunzime de câmp” redusă. Prin acest lucru ne referim la regiunea din fața și spatele punctului în care este focalizată imaginea în care fotografia este <i>clară</i>.</p>
+                <img src="aperture-diagrama.png" class="image hidden">
+                <p class="hidden">Exemplul cel mai întâlnit este efectul de ”bokeh” sau ”blur de fundal” întâlnit în majoritatea portretelor.</p>
+                <div class="img-grid">
+                    <img src="bokeh-1.jpg" class="hidden delay"><img src="bokeh-2.jpg" class="hidden delay"><img src="bokeh-3.png" class="hidden delay">
+                </div>
+                <p class="hidden">Un f mare este folosit în principal în imagini unde avem nevoie ca mai multe subiecte aflate la distanțe diferite de aparat să fie clare. În general peisagistica necesită o diafragmă închisă la maxim.</p>
+                 <div class="img-grid">
+                <img src="landscape-1.jpg" class="hidden delay"><img src="group-photo.jpg" class="hidden delay"><img src="landscape-2.jpg" class="hidden delay">
+                </div>
+            </div>
+            <div class="iso" id="iso">
+                <h2 class="sec-heading hidden">Sensibilitatea Senzorului</h2>
+                <p class="hidden">Senzorul cât și filmul au o proprietate numită sensibilitate la lumină. Atunci când setăm sensibilitatea, numită în mod uzual ca ISO, la o valoare mare, senzorul va capta lumina chiar și când aceasta este foarte slabă, precum noaptea.</p>
+                <img src="iso-diagram.png" class="image hidden">
+                <p class="hidden">Un efect nedorit al ISO-ului foarte ridicat este ”zgomotul”. Acest termen se referă la un efect similar unui televizor vechi fără semanl, pe scurt, calitate inferioară a imaginii. </p>
+                <!--TODO ADD IMAGE SOURCE-->
+                <img src="iso-2.jpg" class="image hidden">
+                <p class="hidden">In general se vor alege celălalte setări iar ISO-ul va fi cea mai mică valoare posibilă care va produce o imagine corect expusă.</p>
+            </div>
+            <div class="light" id="light">
+                <h2 class="sec-heading hidden">Lumina</h2>
+                <p class="hidden">Acest termen face referire la sursele de lumină din natură sau diversele lumini de studio ce ne pot ajuta în obținerea unor umbre și zone luminate inedite, deoarece acestea oferă tridimensionalitate imaginii.<br>Sunt multe moduri în care pot fi utilizate luminile, mai jos fiind câteva dintre ele.</p>
+                <img src="lights.jpg" class="image hidden">
+            </div>
+            <div class="lenses">
+                <h2 class="sec-heading hidden">Obiective</h2>
+                <p class="hidden">Obiectivele sunt ceea ce determină cât de aproape sau departe va apărea imaginea surprinsă de aparatul foto, așa zisul: ”zoom”. Tipul de obiectiv, f-ul minim, distanța focală și multe alte caracteristici sunt cele ce determină cărui tip de fotografie îi este destinat un obiectiv și ce fel de imagini te poți aștepta să obții.</p>
+                <img src="lenses.jpg" class="image hidden"><br>
+                <a type="button" href="obiective.html" class="button hidden">Mai multe despre Obiective</a>
+            </div>
+            <div class="space"></div>
+        </section>
+        <div class="fill-arta-foto" id="arta-foto"></div>
+        <section class="arta-foto" >
+            <div class="arta-def">
+                <div class="space"></div>
+                <h1 class="heading_artafoto hidden">ARTA FOTOGRAFICĂ</h1>
+                <p class="hidden">Arta fotografică se referă la toate elementele vizuale ce fac o fotografie frumoasă, sau atractivă ochiului uman, precum: compoziția, culoarea, tipul de lumină, textura, subiectul, încadrarea etc...</p>
+                <p class="hidden">În principal, arta fotogragică se referă la creativitate, deoarece imaginile nu sunt doar culori aruncate la întâmplare, rolul lor este să spună o poceste. Cu cat mai multă imaginație, cu atât mai interesante imaginile. Însă, există niște concepte de bază care să vă ajute în a creea fotografilor mai frumoase.
+                </p>
+            </div>
+            <div class="3planuri">
+                <h2 class="sec-heading-artafoto hidden">CELE 3 PLANURI</h2>
+                <p class="hidden">O fotografie poate să fie împărțită în 3 planuri, cel apropiat (foreground), cel de mijloc si fundalul (background). Poziționarea subiectelor în cele 3 planuri concuce privirea către punctul de interes din imagine.</p>
+                <img src="3planuri.png" class="image hidden">
+                <p class="hidden">Deasemenea, locația subiectului transmite sentimente diferite, de exemplu singurătate ( subiect singur în planul de fundal, sau frică și claustrare ( subiect apropiat, fără spațiu între acesta și marginile imaginii ) </p>
+                <div class="img-grid">
+                    <img src="grid1.png" class="hidden delay">
+                    <img src="grid2.png" class="hidden delay">
+                    <img src="grid3.png" class="hidden delay">
+                    <img src="grid4.png" class="hidden delay">
+                    <img src="grid5.png" class="hidden delay">
+                    <img src="grid6.png" class="hidden delay">
+                </div>
+            </div>
+            <div class="fig-fund">
+                <h2 class="sec-heading-artafoto hidden">FIGURĂ ȘI FUNDAL</h2>
+                <p class="hidden">În fotografie ne putem flosi atât de ceea de reprezintă subiectul, dar și de fundal pentru a reprezenta noi perspective, asemenea faimoasei iluzii cu fețele care se sărută sau vaza.</p>
+                <img src="vaza.png" class="image hidden">
+                <p class="hidden">Deasemenea siluetele sunt foarte apreciate deoarece sugerează mister fiind un element ce captivează privitorul.</p>
+                <div class="img-grid">
+                    <img src="patri.jpg" class="hidden delay">
+                    <img src="mitaceci.jpg" class="hidden delay">
+                </div>
+            </div>
+
+            <div class="refelxii">
+                <h2 class="sec-heading-artafoto hidden">REFLEXII</h2>
+                <p class="hidden">Dacă sunteți utilizatori de social-media, este imposibil să nu fi vazut fotografiile cu reflexii. Fie că este apă, oglinzi, geamuri, sau orice alt material lucios, acestea sunt foarte utilizate în fotografie deoarece aduc o perspectivă nouă, interesantă. Deasemenea adaugă simetrie imaginii umplând într-un mod plăcut spațiul liber din jurul subiectului.</p>
+                <div class="img-grid">
+                    <img src="2grid1.jpg" class="hidden delay">
+                    <img src="2grid2.jpg" class="hidden dely">
+                    <img src="2grid3.jpg" class="hidden delay">
+                    <img src="2grid4.jpg" class="hidden delay">
+                    <img src="2grid5.jpg" class="hidden delay">
+                </div>
+            </div>
+
+            <div class="linii">
+                <h2 class="sec-heading-artafoto hidden">LINII</h2>
+                <p class="hidden">Liniile au, în fotografie, rolul de a îndrepta privirea către subiect, de a ghida și a focusa, de a atrage atenția. De fiecare dată când aveți ocazia, folosițivă de ele.</p>
+                <div class="img-grid">
+                    <img src="3grid1.jpg" class="hidden delay">
+                    <img src="3grid2.jpg" class="hidden delay">
+                    <img src="3grid3.jpg" class="hidden delay">
+                </div>
+            </div>
+
+            <div class="periodicitate">
+                <h2 class="sec-heading-artafoto hidden">PERIODICITATE</h2>
+                <p class="hidden">Elementele asemănătoare care se repetă atrag ochiul uman deoarece creează modele sau forme. Deasemenea lipsa unui element din șirul repetitiv atrage atenția făcând imaginea mai interesantă.</p>
+                <div class="img-grid">
+                    <img src="4grid1.png" class="hidden delay">
+                    <img src="4grid2.png" class="hidden delay">
+                    <img src="4grid3.png" class="hidden delay">
+                </div>
+            </div>
+            
+            <div class="culoare">
+                <h2 class="sec-heading-artafoto hidden">CULOARE</h2>
+                <p class="hidden">Culoarea poate părea atractivă și interesantă, dar cu toții suntem obișnuiți să vedem imagini color. Asta face ca atunci când culoarea lipsește sau când o singură culoare apare în imagine, această să fie mult mai captivantă.</p>
+                <div class="img-grid">  
+                    <img src="splash.jpg" class="hidden delay">
+                    <img src="5grid1.png" class="hidden delay">
+                    <img src="5grid2.png" class="hidden delay">
+                </div>
+                <p class="hidden">Deasemenea, în fotografie se spune că: "culoarea fură". O imagine poate să fie expusă incorect, dar din cauza culorii să nu se observe. Se pot observa cele 2 imagini mult prea întunecate și cea lipsită de contrast, dar din cauza culorii nu se observă aceste "greșeli".</p>
+                <div class="img-grid">  
+                    <img src="6grid2.png" class="hidden delay">
+                    <img src="6grid1.png" class="hidden delay">
+                    <img src="6grid3.png" class="hidden delay">
+                </div>
+            </div>
+
+            <div class="textura">
+                <h2 class="sec-heading-artafoto hidden">TEXTURĂ</h2>
+                <p class="hidden">Materialul și textura unui ascund detalii despre locul, vechimea și istoria acestuia.De exemplu un perete spart pe fundalul unui portret al unui om trist, sau petale de flori langă o rochie de mătase. Aceste detalii spun povestea din spatele unei imagini. </p>
+                <div class="img-grid">  
+                    <img src="7grid1.png" class="hidden delay">
+                    <img src="7grid2.png" class="hidden delay">
+                    <img src="7grid3.png" class="hidden delay">
+                    <img src="7grid4.png" class="hidden delay">
+                    <img src="7grid5.png" class="hidden delay">
+                </div>
+            </div>
+
+            <div class="treimile">
+                <h2 class="sec-heading-artafoto hidden">REGULA TREIMILOR</h2>
+                <p class="hidden">Cu siguranță ați auzit de regula treimilor dacă ați văzut orice "tutorial" sau articol despre fotografie. Aceasta spune că împărțind o imagine în treimi, intersecția acestora cât și ele în sine vor fi zone de interes.</p>
+                <img src="treimile.png" class="image hidden">
+                <p class="hidden">Astfel, subiecte plasate în aceste zone vor fi mult mai interesante decât un subiect central. Poziționare pe dreapta sau pe stânga, direcția privirii subiectului, toate influențează semnificația imaginii.</p>
+                    <img src="8grid4.png" class="image hidden">
+                    <img src="8grid5.png" class="image hidden">
+                </div>
+
+            <div class="compozitie">
+                <h2 class="sec-heading-artafoto hidden">COMPOZIȚIE</h2>
+                <p class="hidden">În fotografie este foarte important unde este plasat sbubiectul, cât și spațiul dintre el și margini.</p>
+                <img src="comp.png" class="image hidden">
+                <p class="hidden">În compoziția generală, important este ca subiectul sau subiecții să nu fie lipiți de margini sau extrem de depărtați de acestea.
+                </p>
+                <img src="9grid1.png" class="image hidden">
+                <img src="9grid2.png" class="image hidden">
+                <p class="hidden">În fotografia de potret sunt multe moduri de a surprinde subiectul, prim-plan-ul, bustul, poza completa, sau poza de detaliu doar la o parte specifică. O regulă de baze este să nu tăiați poza la nivelul articulațiilor, adică să nu fie marginea imaginii exact în dreptul genunchilor, sau gâtului.</p>
+                <img src="portrete.png" class="image hidden">
+                <div class="img-grid">  
+                    <img src="10grid1.png" class="hidden delay">
+                    <img src="10grid2.png" class="hidden delay">
+                    <img src="10grid3.png" class="hidden delay">
+                </div>
+            </div>
+
+            <div class="cuvantfinal">
+                <h2 class="sec-heading-artafoto hidden">CUVÂNT DE FINAL</h2>
+                <p class="hidden">În final, fotografia este doar despre creativitate, despre cum percepi tu ca și om lumea. Așa că cel mai bun sfat este să experimentați, fără să vă gândiți "dacă nu iese poza?", important este doar să vă distrați și să vă bucurați de această artă minunată care este fotografia.</p>
+            </div>
+        </section>
+    </div>
+
+</html>
